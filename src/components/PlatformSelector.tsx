@@ -21,7 +21,7 @@ export const PlatformSelector = ({
 			<MenuButton as={Button} rightIcon={<BsChevronDown />}>
 				{selectedPlatform?.name || "Platforms"}
 			</MenuButton>
-			<MenuList overflowY="scroll" maxH="400px">
+			<MenuList>
 				{data.map((platform) => (
 					<MenuItem onClick={() => onSelectPlatform(platform)} key={platform.id}>
 						{platform.name}
